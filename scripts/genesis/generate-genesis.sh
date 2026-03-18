@@ -375,6 +375,16 @@ HEADER
         echo "TTFB_TIMEOUT: 5" >> "$OUTPUT_DIR/config-web3signer.yaml"
         echo "RESP_TIMEOUT: 10" >> "$OUTPUT_DIR/config-web3signer.yaml"
     fi
+
+    # Add attestation subnet fields required by web3signer 24.12.0 (newer generators omit these)
+    if ! grep -q '^ATTESTATION_SUBNET_PREFIX_BITS:' "$OUTPUT_DIR/config-web3signer.yaml"; then
+        echo "" >> "$OUTPUT_DIR/config-web3signer.yaml"
+        echo "# Attestation subnet fields (added - required by web3signer 24.12.0)" >> "$OUTPUT_DIR/config-web3signer.yaml"
+        echo "ATTESTATION_SUBNET_PREFIX_BITS: 6" >> "$OUTPUT_DIR/config-web3signer.yaml"
+    fi
+    if ! grep -q '^MIN_EPOCHS_FOR_BLOCK_REQUESTS:' "$OUTPUT_DIR/config-web3signer.yaml"; then
+        echo "MIN_EPOCHS_FOR_BLOCK_REQUESTS: 33024" >> "$OUTPUT_DIR/config-web3signer.yaml"
+    fi
 fi
 
 # Save generation metadata
