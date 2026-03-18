@@ -385,6 +385,9 @@ HEADER
     if ! grep -q '^MIN_EPOCHS_FOR_BLOCK_REQUESTS:' "$OUTPUT_DIR/config-web3signer.yaml"; then
         echo "MIN_EPOCHS_FOR_BLOCK_REQUESTS: 33024" >> "$OUTPUT_DIR/config-web3signer.yaml"
     fi
+    if ! grep -q '^MAX_REQUEST_BLOB_SIDECARS:' "$OUTPUT_DIR/config-web3signer.yaml"; then
+        echo "MAX_REQUEST_BLOB_SIDECARS: 768" >> "$OUTPUT_DIR/config-web3signer.yaml"
+    fi
 fi
 
 # Save generation metadata
