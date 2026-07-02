@@ -1,0 +1,9 @@
+{
+  "env": "ethereum-staging",
+  "generated_at": "2026-07-02T12:30:50Z",
+  "genesis_timestamp": 1782995568,
+  "validators": 128,
+  "chain_id": 3151909,
+  "config_path": "ethereum-staging",
+  "mnemonic_hint": "trend jump ... swarm"
+}
