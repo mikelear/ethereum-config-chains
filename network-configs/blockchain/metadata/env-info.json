@@ -1,0 +1,9 @@
+{
+  "env": "blockchain",
+  "generated_at": "2026-08-11T15:31:52Z",
+  "genesis_timestamp": 1786462421,
+  "validators": 128,
+  "chain_id": 3151909,
+  "config_path": "blockchain",
+  "mnemonic_hint": "trend jump ... swarm"
+}

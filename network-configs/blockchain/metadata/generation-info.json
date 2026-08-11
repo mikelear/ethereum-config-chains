@@ -1,0 +1,19 @@
+{
+    "generated_at": "2026-08-11T15:31:52Z",
+    "genesis_timestamp": 1786462422,
+    "genesis_date": "2026-08-11 16:33:42 UTC",
+    "validators": 128,
+    "chain_id": 3151909,
+    "withdrawal_address": "0x57C77A6f9F1f0144d5feDbB31B2B71c3B64549DB",
+    "deposit_contract": "0x00000000219ab540356cBB839Cbe05303d7705Fa",
+    "mnemonic_hint": "trend jump ... funny swarm",
+    "premine_file": "./accounts/genesis_alloc.json",
+    "fork_epochs": {
+        "altair": 0,
+        "bellatrix": 0,
+        "capella": 0,
+        "deneb": 0,
+        "electra": 1,
+        "fulu": 18446744073709551615
+    }
+}

@@ -315,7 +315,7 @@ else
         -e ELECTRA_FORK_EPOCH="$ELECTRA_FORK_EPOCH" \
         -e FULU_FORK_EPOCH="$FULU_FORK_EPOCH" \
         -e EL_PREMINE_ADDRS="$PREMINE_ADDRS" \
-        ethpandaops/ethereum-genesis-generator:master all
+        ethpandaops/ethereum-genesis-generator:"${GENESIS_GENERATOR_TAG:-6.1.2}" all
 fi
 
 echo ""
